@@ -1,0 +1,30 @@
+depth = 90;
+_alpha = 0;
+_t = random(1000);
+_rw = 320;
+_rh = 240;
+_tr = 215;
+_tg = 150;
+_tb = 255;
+_title = "CHAPTER 3";
+_r1 = 15;
+_g1 = 6;
+_b1 = 26;
+_r2 = 52;
+_g2 = 18;
+_b2 = 86;
+_r3 = 8;
+_g3 = 2;
+_b3 = 14;
+_scount = 65;
+_sx = [];
+_sy = [];
+_sz = [];
+_sph = [];
+for (var i = 0; i < _scount; i++)
+{
+    _sx[i] = random(_rw);
+    _sy[i] = random(_rh);
+    _sz[i] = random_range(0.15, 1);
+    _sph[i] = random(6.28318);
+}

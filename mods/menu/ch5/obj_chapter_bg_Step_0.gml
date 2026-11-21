@@ -1,0 +1,13 @@
+_t += (1 / global.fps_scale);
+_alpha = lerp(_alpha, 1, 1 - power(0.96, 1 / global.fps_scale));
+var h = 240;
+for (var i = 0; i < _scount; i++)
+{
+    _sy[i] -= (0.22 + (_sz[i] * 0.45)) / global.fps_scale;
+    _sx[i] += (sin((_t * 0.025) + _sph[i]) * 0.15) / global.fps_scale;
+    if (_sy[i] < -6)
+    {
+        _sy[i] += h + 12;
+        _sx[i] = random(320);
+    }
+}

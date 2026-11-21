@@ -1,0 +1,6 @@
+# Temp & user config
+installer_settings.ini
+mods/patch_config.txt
+*.win
+*.bak
+mod_backups/
